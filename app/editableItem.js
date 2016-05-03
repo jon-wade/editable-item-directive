@@ -1,7 +1,15 @@
-var app = angular.module('app', function(){
+var app = angular.module('app', []);
 
+app.directive('makeEditable', function(){
+    return {
+        restrict: 'A',
+        templateUrl: 'editable-item-template.html',
+        scope: true,
+        link: function(scope, element, attrs){
+
+        }
+    };
 });
-
 
 
 //angular.module('megaVideoDemo', []).
