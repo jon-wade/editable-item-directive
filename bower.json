@@ -1,0 +1,22 @@
+{
+  "name": "editable-item-directive",
+  "homepage": "https://github.com/jon-wade/editable-item-directive",
+  "authors": [
+    "jon-wade <jonwadeuk@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "angular": "^1.5.5"
+  }
+}
