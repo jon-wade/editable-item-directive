@@ -4,8 +4,32 @@ app.directive('makeEditable', function(){
     return {
         restrict: 'A',
         templateUrl: 'editable-item-template.html',
+        transclude: true,
+        replace: true,
         scope: true,
         link: function(scope, element, attrs){
+
+            //this variable sets the editable content style via the CSS, color: red; when true and white when false
+            scope.edit = false;
+            scope.buttonText = 'edit';
+            console.log(attrs);
+
+
+
+
+            scope.toggleEdit = function (){
+                scope.edit = !scope.edit;
+                if(scope.buttonText == 'edit'){
+                    scope.buttonText = 'save';
+
+
+                }
+                else {
+                    scope.buttonText = 'edit';
+                }
+            };
+
+
 
         }
     };

@@ -5,10 +5,14 @@
 	<title>Document</title>
 	<script src="bower_components/angular/angular.min.js"></script>
 	<script src="editableItem.js"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div make-editable>
-        <p>Content that will become editable when the directive rendered.</p>
+        <p class="hello">Content that will become editable when the directive is rendered.</p>
+    </div>
+    <div make-editable>
+        <p>Some different content that will become editable when the directive is rendered.</p>
     </div>
 </body>
 </html>

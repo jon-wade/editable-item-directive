@@ -1,13 +1,4 @@
-<!--<video -->
-	<!--width="{{ video.width }}" -->
-	<!--height="{{ video.height }}" -->
-	<!--ng-click="video.togglePlay()" -->
-	<!--ng-dblclick="video.stop()">-->
-
-	<!--<source  -->
-		<!--ng-repeat="source in sources" -->
-		<!--ng-src="{{ source.src }}" -->
-		<!--type="{{ source.type }}">-->
-	<!--</source>-->
-
-<!--</video>-->
+<div>
+    <div ng-transclude ng-class="{edit: edit}" contenteditable={{edit}}></div>
+    <button type="button" ng-click="toggleEdit()">{{buttonText}}</button>
+</div>
